@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding shtuttle</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav flex container">
+            <a href="indexx.html" class="company-logo"><img src="logo.png" alt=""></a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav-item" id="ipl" onclick="onNavclick('ipl')">IPL</li>
+                    <li class="nav-item" id="finance" onclick="onNavclick('finance')">Finance</li>
+                    <li class="nav-item" id="politics" onclick="onNavclick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" placeholder="e.g. Tata Share price" class="news-input" id="inputId">
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+          
+            </div>
+
+        </div>
+
+        <template id="template-news-card">
+            <!-- it is used to hide data from user. it will olny shown when jacascript added to it
+                <button onclick="showContent()">Show hidden content</button>
+               DOM me se gayab ho jata hai
+<template>
+  <h2>Flower</h2>
+  <img src="img_white_flower.jpg" width="214" height="204">
+</template>
+
+<script>
+function showContent() {
+  let temp = document.getElementsByTagName("template")[0];
+  let clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script> -->
+<div class="card">
+    <div class="header">
+        <img src="https://fakeimg.pl/400x200" alt=""  id="news-Img">
+    </div>
+    <div class="content">
+        <h3 id="news-title">This is news</h3>
+        <h6 id="news-source">content of news</h6>
+        <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo quod
+            natus! Maiores expedita sequi accusantium totam nemo cupiditate fuga!</p>
+    </div>
+
+        </template>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

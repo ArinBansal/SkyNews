@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    background-color: #f3fff3;
+    box-shadow: 0px 0px 4px #bbde02;
+    /* position: fixed;
+    top: 0; */
+    z-index: 99;
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding: 8px 0px;
+}
+
+.company-logo img{
+    width: 115px;
+}
+
+.nav-links ul{
+    gap: 8px;
+}
+
+.nav-links ul li{
+    cursor: pointer;
+}
+
+.nav-links ul li:hover{
+    color: blue;
+}
+
+.nav-links ul li:active{
+    color: red;
+}
+
+.search-bar{
+   height: 32px;
+   gap: 8px;
+}
+
+.news-input{
+    height: 100%;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 0px 12px;
+}
+
+.search-btn{
+    background-color: rgb(6, 175, 231);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    transition: 0.2s;
+}
+
+.search-btn:hover{
+    background-color: darkblue;
+}
+
+.search-btn:active{
+    transform: scale(0.9);
+    box-shadow: 0px 0px 1px black;
+}
+
+main{
+    margin-top: 40px;
+}
+
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: start;
+    
+}
+
+.card{
+    width: 360px;
+    overflow: hidden;
+    /* padding: 3px 6px; */
+    min-height: 400px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px #d4ecff;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.2s;
+
+}
+
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdf9;
+    transform: translateY(-3px);
+}
+
+.header img{
+    width: 100%;
+    height: 180px;
+    position: cover;
+}
+
+.content{
+    padding: 12px;
+}
+
+.nav-item.active{
+    color: blue;
+}
